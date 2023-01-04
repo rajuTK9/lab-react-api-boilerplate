@@ -16,7 +16,7 @@ function RenderBooks(props) {
             <h2 className="card-title">{e.title}</h2>
             <h4 className="card-author">
               {e.authors.map((author, i) => {
-                return e.authors.length != i + 1 ? author + ", " : author;
+                return e.authors.length !== i + 1 ? author + ", " : author;
               })}
             </h4>
             <p className="description">{e.description}</p>
